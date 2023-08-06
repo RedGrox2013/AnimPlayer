@@ -55,7 +55,7 @@ const char* PlayAnimCheat::GetDescription(ArgScript::DescriptionMode mode) const
 		return "Play animation by name or ID. Type \"help playAnim\" for more information.";
 	}
 	else {
-		ShellExecute(NULL, L"open", L"https://github.com/RedGrox2013/AnimPlayer/blob/main/README.md", NULL, NULL, SW_SHOW);
+		ShellExecute(NULL, L"open", L"https://github.com/RedGrox2013/AnimPlayer#readme", NULL, NULL, SW_SHOW);
 		return "PlayAnimCheat: play animation by name or ID. You can find the animations in the tlsa file.";
 	}
 }
