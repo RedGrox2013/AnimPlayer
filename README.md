@@ -9,7 +9,54 @@
 ![preview](Preview.gif)
 
 ## Дополнительные анимации
-Рекомендую скачать моды на дополнительные анимации. Вы сможете вызывать их, просто обращаясь к ним по ID или по имени. Список модов и команд представлен ниже⬇️
+Рекомендую скачать моды на дополнительные анимации. Вы сможете вызывать их, просто обращаясь к ним по ID или по имени (как в примере выше). Список модов и команд представлен ниже⬇️
 
 ### [Dance Animations](https://davoonline.com/phpBB3/viewtopic.php?t=9826)
-Допишу список чуть позже
++ `FortniteDance`
++ `FlossDance`
++ `ElectroShuffle`
++ `GangnamStyle`
++ `Rock_Out`
++ `DancingTwerk`
++ `ShearerDance`
++ `OrangeJustice`
++ `Dance_Disco`
++ `EasternBloc`
++ `Fresh`
++ `CrabRave`
++ `Hillbilly_Shuffle`
++ `HipHop`
++ `PopRock`
++ `SmoothDrive`
++ `TechnoZombie`
++ `GrooveJam`
++ `IrishJig`
++ `TikTokDance`
++ `AllAroundTheWorld`
++ `SplashFree`
++ `Thriller`
++ `PoPiPo`
++ `Umbrella`
++ `GlideDance`
++ `LetsGetItStarted`
++ `Moves_like_jagger`
++ `PPAP`
++ `DunDun`
++ `Specialist`
++ `RiversInTheDesert`
++ `Caramelldansen`
++ `Saxobeat`
++ `PopStars`
++ `RatherBe`
++ `7Rings`
++ `BadRomance`
++ `Dynamite`
++ `Classic`
++ `DUMDiDUMDi`
++ `HandClap`
++ `Conqueror`
++ `LeanOn`
++ `MozaikRole`
++ `Shake_It_Off`
++ `UptownFunk`
++ `TheFlop`
