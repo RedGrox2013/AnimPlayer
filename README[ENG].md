@@ -1,17 +1,15 @@
 # AnimPlayer
-Мод для Spore, который позволяет проигрывать любую анимацию с помощью чита `playAnim`
+A mod for Spore that allows you to play any animation using the `playAnim` cheat
 
-README in English - https://github.com/RedGrox2013/AnimPlayer/blob/main/README[ENG].md
-
-## Как использовать
-1. Установите [Spore ModAPI Launcher Kit](http://davoonline.com/sporemodder/rob55rod/ModAPI/Public/index.html)
-2. Запустите **Spore ModAPI Easy Installer** и выберите файл `AnimPlayer.sporemod`
-3. Запустите игру, нажмите *`ctrl+shift+c`* и введите `playAnim <animation>`, где *`animation`* - ID (хеш) или нехешированное имя анимации (его можно узать в *`tlsa`*-файле)
+## How to use
+1. Install [Spore ModAPI Launcher Kit](http://davoonline.com/sporemodder/rob55rod/ModAPI/Public/index.html)
+2. Run **Spore ModAPI Easy Installer** and select `AnimPlayer.sporemod` file
+3. Run the game, press *`ctrl+shift+c`* and type `playAnim <animation>`, where *`animation`* is the ID (hash) or unhashed name of the animation (it can be found in the *`tlsa`* file)
 
 ![preview](Preview.gif)
 
-## Дополнительные анимации
-Рекомендую скачать моды на дополнительные анимации. Вы сможете вызывать их, просто обращаясь к ним по ID или по имени (как в примере выше). Список модов и команд представлен ниже⬇️
+## Additional animations
+I recommend downloading mods for additional animations. You can call them by simply referring to them by ID or by name (as in the example above). The list of mods and commands is presented below⬇️
 
 ### [Dance Animations](https://davoonline.com/phpBB3/viewtopic.php?t=9826)
 + `FortniteDance`
