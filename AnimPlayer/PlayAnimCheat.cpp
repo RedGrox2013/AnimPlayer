@@ -48,7 +48,7 @@ void PlayAnimCheat::ParseLine(const ArgScript::Line& line)
 #endif // _DEBUG
 
 	if (index == 0)
-		ConsolePrintF("Animation \"%d\" not found", line.GetArgumentAt(1));
+		ConsolePrintF("Animation \"%ls\" not found", line.GetArgumentAt(1));
 }
 
 const char* PlayAnimCheat::GetDescription(ArgScript::DescriptionMode mode) const
