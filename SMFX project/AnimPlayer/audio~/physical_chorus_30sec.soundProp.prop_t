@@ -1,0 +1,10 @@
+float gain 0.8
+float maxdistance 200
+float mindistance 150
+key musicTemplate 0xC34297C8
+uint32 polyphony 1
+keys samples
+	physical_chorus_30sec
+end
+key 0x07F28ACC 0x556FEA66
+uint32 0xBA03D0CD 5
