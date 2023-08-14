@@ -33,7 +33,7 @@ void PlayAnimListCheat::ParseLine(const ArgScript::Line& line)
 
 		string16 modName;
 		if (Property::GetString16(prop.get(), id("modName"), modName))
-			ConsolePrintF("%ls:", modName);
+			ConsolePrintF("---------------- %ls ----------------", modName);
 
 		size_t count;
 		string16* animationsNames;
