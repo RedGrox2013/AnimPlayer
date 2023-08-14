@@ -23,10 +23,14 @@ void PlayAnimCheat::AddCheat()
 void PlayAnimCheat::ParseLine(const ArgScript::Line& line)
 {
 	if (line.GetArgumentsCount() == 1) {
-		ConsolePrintF("Enter animation name. For example: playAnim Test");
+		ConsolePrintF("Enter animation name. For example: playAnim Physical");
 		return;
 	}
-	if (!IsCreatureGame() && !IsScenarioMode())
+	/*if (!IsCreatureGame() && !IsScenarioMode())
+		return;*/
+
+	cCreatureAnimalPtr avatar = GameNounManager.GetAvatar();
+	if (avatar == nullptr)
 		return;
 
 	uint32_t animID;
@@ -37,13 +41,11 @@ void PlayAnimCheat::ParseLine(const ArgScript::Line& line)
 		animID = id(line.GetArgumentAt(1));
 	}
 
-	cCreatureAnimalPtr avatar = GameNounManager.GetAvatar();
 	auto index = avatar->PlayAnimation(animID);
 
 #ifdef _DEBUG
 	ConsolePrintF("Animation index: %d", index);
 #endif // _DEBUG
-
 
 	if (index == 0)
 		ConsolePrintF("Animation \"%d\" not found", line.GetArgumentAt(1));
@@ -52,10 +54,10 @@ void PlayAnimCheat::ParseLine(const ArgScript::Line& line)
 const char* PlayAnimCheat::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "Play animation by name or ID. Type \"help playAnim\" for more information.";
+		return "Play animation by name or ID. Type \"help animPlay\" for more info or type \"animPlayList\" to get a list of some animations from this mod.";
 	}
 	else {
 		ShellExecute(NULL, L"open", L"https://github.com/RedGrox2013/AnimPlayer#readme", NULL, NULL, SW_SHOW);
-		return "PlayAnimCheat: play animation by name or ID. You can find the animations in the tlsa file.";
+		return "PlayAnimCheat: play animation by name or ID. Type \"animPlayList\" to get a list of some animations from this mod. You can also find the animation in the tlsa file.";
 	}
 }
