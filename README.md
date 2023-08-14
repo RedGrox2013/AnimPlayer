@@ -1,5 +1,5 @@
 # AnimPlayer
-Мод для Spore, который позволяет проигрывать любую анимацию с помощью чита `playAnim`
+Мод для Spore, который позволяет проигрывать любую анимацию с помощью чита `playAnim`. Также вы можете использовать чит `playAnimList`, чтобы получить список некоторых анимаций из мода.
 
 README in English - https://github.com/RedGrox2013/AnimPlayer/blob/main/README[ENG].md
 
@@ -162,3 +162,20 @@ README in English - https://github.com/RedGrox2013/AnimPlayer/blob/main/README[E
 + `DreamFeet`
 + `Switch`
 + `BadGuy`
+
+---
+
+## Для разработчиков модов
+Если вы разрабатываете мод, добавляюзий новые анимации, то вы можете добавить список своих анимаций, чтобы чит `playAnimList` вывел его в консоль. Для этого создайте в своем проекте папку **`AnimPlayer`** и создайте там *`prop`*-файл, содержащий массив имен анимаций **(имя должно совпадать с названием в *`tlsa`*-файле!)**. Также ваш *`prop`*-файл должен иметь **уникальное имя**.
+
+### Пример
+```
+# Файл example.prop.prop_t
+
+string16 modName "My Mod"
+string16s animationsNames
+	"You can display any information here"
+	"playAnim MyAnimation"
+end
+```
+![example](ModExample.png)

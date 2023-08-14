@@ -1,5 +1,5 @@
 # AnimPlayer
-A mod for Spore that allows you to play any animation using the `playAnim` cheat
+A mod for Spore that allows you to play any animation using the `playAnim` cheat. You can also use the `playAnimList` cheat to get a list of some animations from the mod.
 
 ## How to use
 1. Install [Spore ModAPI Launcher Kit](http://davoonline.com/sporemodder/rob55rod/ModAPI/Public/index.html)
@@ -160,3 +160,20 @@ I recommend downloading mods for additional animations. You can call them by sim
 + `DreamFeet`
 + `Switch`
 + `BadGuy`
+
+---
+
+## For mod developers
+If you are developing a mod that adds new animations, then you can add a list of your animations so that the `playAnimList` cheat prints it to the console. To do this, create a folder **`AnimPlayer`** in your project and create a *`prop`* file there containing an array of animation names **(the name must match the name in the *`tlsa`* file!)**. Also your *`prop`* file must have a **unique name**.
+
+### Example
+```
+# File example.prop.prop_t
+
+string16 modName "My Mod"
+string16s animationsNames
+	"You can display any information here"
+	"playAnim MyAnimation"
+end
+```
+![example](ModExample.png)
