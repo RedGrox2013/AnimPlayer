@@ -31,11 +31,15 @@ void PlayAnimListCheat::ParseLine(const ArgScript::Line& line)
 		PropertyListPtr prop;
 		PropManager.GetPropertyList(propIDs.at(i), GROUP_ID, prop);
 
+		string16 modName;
+		if (Property::GetString16(prop.get(), id("modName"), modName))
+			ConsolePrintF("%ls:", modName);
+
 		size_t count;
 		string16* animationsNames;
 		Property::GetArrayString16(prop.get(), id("animationsNames"), count, animationsNames);
 		for (size_t i = 0; i < count; i++)
-			ConsolePrintF("playAnim %ls", *(animationsNames + i));
+			ConsolePrintF("%ls", *(animationsNames + i));
 	}
 	ConsolePrintF("\nYou can also find the animation in the tlsa file. Type \"help playAnim\" for more info.");
 }
