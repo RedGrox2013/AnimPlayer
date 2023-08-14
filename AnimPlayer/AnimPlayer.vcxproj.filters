@@ -25,6 +25,7 @@
     <ClInclude Include="PlayAnimListCheat.h">
       <Filter>AnimPlayer</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -47,5 +48,10 @@
     <Text Include="ReadMe.txt">
       <Filter>Internal</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AnimPlayer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
