@@ -1,3 +1,4 @@
 <mod displayName="AnimPlayer RedGrox'а (Духа Ияхо)" unique="AnimPlayer" description="Мод для Spore, который позволяет проигрывать любую анимацию с помощью чита playAnim" installerSystemVersion="1.0.1.0" hasCustomInstaller="false" dllsBuild="2.5.20">
 	<prerequisite>AnimPlayer.dll</prerequisite>
+	<prerequisite game="GalacticAdventures">AnimPlayer.package</prerequisite>
 </mod>
