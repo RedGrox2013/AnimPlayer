@@ -54,10 +54,10 @@ void PlayAnimCheat::ParseLine(const ArgScript::Line& line)
 const char* PlayAnimCheat::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "Play animation by name or ID. Type \"help animPlay\" for more info or type \"animPlayList\" to get a list of some animations from this mod.";
+		return "Play animation by name or ID. Type \"help playAnim\" for more info or type \"playAnimList\" to get a list of some animations from this mod.";
 	}
 	else {
 		ShellExecute(NULL, L"open", L"https://github.com/RedGrox2013/AnimPlayer#readme", NULL, NULL, SW_SHOW);
-		return "PlayAnimCheat: play animation by name or ID. Type \"animPlayList\" to get a list of some animations from this mod. You can also find the animation in the tlsa file.";
+		return "PlayAnimCheat: play animation by name or ID. Type \"playAnimList\" to get a list of some animations from this mod. You can also find the animation in the tlsa file.";
 	}
 }
