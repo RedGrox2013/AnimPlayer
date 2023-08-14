@@ -22,6 +22,9 @@
     <ClInclude Include="PlayAnimCheat.h">
       <Filter>AnimPlayer</Filter>
     </ClInclude>
+    <ClInclude Include="PlayAnimListCheat.h">
+      <Filter>AnimPlayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -31,6 +34,9 @@
       <Filter>Internal</Filter>
     </ClCompile>
     <ClCompile Include="PlayAnimCheat.cpp">
+      <Filter>AnimPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayAnimListCheat.cpp">
       <Filter>AnimPlayer</Filter>
     </ClCompile>
   </ItemGroup>

@@ -98,6 +98,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PlayAnimListCheat.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="PlayAnimCheat.h">
       <SubType>
       </SubType>
@@ -106,6 +110,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="PlayAnimListCheat.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

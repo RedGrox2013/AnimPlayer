@@ -1,0 +1,7 @@
+string16 description "You can add your own animation list which will display the "animPlayList" cheat. To do this, create an "AnimalPlayer" folder in your project and create a prop file there containing an array of animation names (the name must match the name in the tlsa file!). Also your prop file must have a unique name."
+string16s animationsNames
+	"Physical"
+	"Mahnamahna1"
+	"Mahnamahna2"
+	"Mahnamahna3"
+end

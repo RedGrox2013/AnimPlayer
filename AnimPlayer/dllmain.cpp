@@ -1,10 +1,12 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "stdafx.h"
 #include "PlayAnimCheat.h"
+#include "PlayAnimListCheat.h"
 
 void Initialize()
 {
 	PlayAnimCheat::AddCheat();
+	PlayAnimListCheat::AddCheat();
 }
 
 void Dispose()
