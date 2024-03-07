@@ -22,33 +22,42 @@ void PlayAnimCheat::AddCheat()
 
 void PlayAnimCheat::ParseLine(const ArgScript::Line& line)
 {
-	if (line.GetArgumentsCount() == 1) {
-		ConsolePrintF("Enter animation name. For example: playAnim Physical");
+	auto args = line.GetOption("id", 1);
+	if (!args && line.GetArgumentsCount() == 1) {
+		ConsolePrintF("Enter animation name or ID. For example: playAnim -id Physical");
 		return;
 	}
-	/*if (!IsCreatureGame() && !IsScenarioMode())
-		return;*/
 
-	cCreatureAnimalPtr avatar = GameNounManager.GetAvatar();
-	if (avatar == nullptr)
-		return;
-
+	auto strAnimID = args ? args[0] : line.GetArgumentAt(1);
 	uint32_t animID;
 	try {
-		animID = mpFormatParser->ParseUInt(line.GetArgumentAt(1));
+		animID = mpFormatParser->ParseUInt(strAnimID);
 	}
 	catch (...) {
-		animID = id(line.GetArgumentAt(1));
+		animID = id(strAnimID);
 	}
 
-	auto index = avatar->PlayAnimation(animID);
+	Anim::AnimIndex index = -1;
+	if (line.HasFlag("all")) {
+		tGameDataVectorT<cCreatureAnimal> creatures = GetData<cCreatureAnimal>();
+		if (creatures.empty())
+			return;
 
-#ifdef _DEBUG
-	ConsolePrintF("Animation index: %d", index);
-#endif // _DEBUG
+		for (cCreatureAnimalPtr c : creatures) {
+			index = c->PlayAnimation(animID);
+			if (index == 0)
+				break;
+		}
+	}
+	else {
+		cCreatureAnimalPtr avatar = GameNounManager.GetAvatar();
+		if (!avatar)
+			return;
+		index = avatar->PlayAnimation(animID);
+	}
 
 	if (index == 0)
-		ConsolePrintF("Animation \"%ls\" not found", line.GetArgumentAt(1));
+		ConsolePrintF("Animation \"%ls\" not found", strAnimID);
 }
 
 const char* PlayAnimCheat::GetDescription(ArgScript::DescriptionMode mode) const

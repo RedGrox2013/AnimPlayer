@@ -1,8 +1,8 @@
 string16 description "You can add your own animation list which will display the "playAnimList" cheat. To do this, create an "AnimPlayer" folder in your project and create a prop file there containing an array of animation names (the name must match the name in the tlsa file!). Also your prop file must have a unique name."
 string16 modName "AnimPlayer"
 string16s animationsNames
-	"playAnim Physical"
-	"playAnim Mahnamahna1"
-	"playAnim Mahnamahna2"
-	"playAnim Mahnamahna3"
+	"playAnim -id Physical"
+	"playAnim -id Mahnamahna1"
+	"playAnim -id Mahnamahna2"
+	"playAnim -id Mahnamahna3"
 end
