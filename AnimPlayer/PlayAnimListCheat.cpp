@@ -26,7 +26,7 @@ void PlayAnimListCheat::ParseLine(const ArgScript::Line& line)
 	if (!PropManager.GetPropertyListIDs(GROUP_ID, propIDs))
 		return;
 
-	ConsolePrintF("Type \"playAnim <animation>\" to play the animation. List of some animations:");
+	ConsolePrintF("Type \"playAnim -id <animation>\" to play the animation. List of some animations:");
 	for (size_t i = 0; i < propIDs.size(); i++) {
 		PropertyListPtr prop;
 		PropManager.GetPropertyList(propIDs.at(i), GROUP_ID, prop);
